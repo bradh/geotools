@@ -144,21 +144,21 @@ If you run the above code, and then load the result in a GIS application like Ar
 You can "force" the projection using the following code::
   
   CoordinateReferenceSystem crs = CRS.decode("EPSG:4326");
-  shape.forceCoordianteReferneceSystem( crs );
+  shape.forceSchemaCRS( crs );
 
 This is only a problem if you did not specify the CoordinateReferenceSystem as part of your FeatureType's GeometryAttribute, or if a prj file has not been provided.
 
 Character Sets
 ''''''''''''''
 
-If you are working with Acerbic, Chinese or Korean character sets you will need to make use of the "charset" connection parameter when setting up your shapefile. The codes used here are the same as documented/defined for the Java Charset class. Indeed you can provide a Chartset or if you provide a String it will be converted to a Charset.
+If you are working with Arabic, Chinese or Korean character sets you will need to make use of the "charset" connection parameter when setting up your shapefile. The codes used here are the same as documented/defined for the Java Charset class. Indeed you can provide a Charset or if you provide a String it will be converted to a Charset.
 
 Thanks to the University of Soul for providing and testing this functionality.
 
 Timezone
 ''''''''
 
-The store will build dates using the default timezone. If you need to work against metereological data the timezone has normally to be forced to "UTC" instead.
+The store will build dates using the default timezone. If you need to work against meteorological data the timezone has normally to be forced to "UTC" instead.
 
 
 Reading PRJ

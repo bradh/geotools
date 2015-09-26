@@ -51,7 +51,7 @@ Examples:
         MapContent content = mapFrame.getMapContent();
         MapViewport viewport = content.getMapViewport();
         ReferencedEnvelope maxBounds = null;
-        CoordinateReferenceSystem mapCRS = viewport.getCoordianteReferenceSystem();
+        CoordinateReferenceSystem mapCRS = viewport.getCoordinateReferenceSystem();
         
         for (Layer layer : content.layers()) {
             ReferencedEnvelope dataBounds = layer.getBounds();
