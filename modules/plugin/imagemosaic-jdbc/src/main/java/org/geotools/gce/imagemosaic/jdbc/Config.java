@@ -166,7 +166,7 @@ public class Config {
         if (tmp != null) {
             map = tmp.getAttributes();
             s = map.getNamedItem("ignore").getNodeValue();
-            result.ignoreAxisOrder = new Boolean(s);
+            result.ignoreAxisOrder = Boolean.valueOf(s);
         }
 
         // db mapping
@@ -235,7 +235,7 @@ public class Config {
         if (tmp != null) {
             NamedNodeMap map = tmp.getAttributes();
             String s = map.getNamedItem("cardinality").getNodeValue();
-            result.verifyCardinality = new Boolean(s);
+            result.verifyCardinality = Boolean.valueOf(s);
         }
     }
 

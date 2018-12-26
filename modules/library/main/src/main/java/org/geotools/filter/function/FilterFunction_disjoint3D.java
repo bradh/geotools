@@ -62,8 +62,8 @@ public class FilterFunction_disjoint3D extends FunctionExpressionImpl {
 
         /**
          * Use the fact that two geometries are disjoint if and only if the distance between them is
-         * greated than zero.
+         * greater than zero.
          */
-        return new Boolean(Distance3DOp.distance(arg0, arg1) > 0.0);
+        return Distance3DOp.distance(arg0, arg1) > 0.0;
     }
 }

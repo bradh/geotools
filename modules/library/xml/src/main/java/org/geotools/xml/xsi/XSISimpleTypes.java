@@ -1892,6 +1892,7 @@ public class XSISimpleTypes {
      *
      * @author dzwiers
      */
+    @SuppressWarnings("PMD.BooleanInstantiation")
     public static class Boolean extends XSISimpleType {
         private static SimpleType instance = new Boolean();
 

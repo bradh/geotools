@@ -1404,7 +1404,7 @@ public class ArgHelper {
                 throw new NullPointerException("The boolean passed in was null");
             }
 
-            return new Boolean(ReaderUtils.getElementText(elem));
+            return Boolean.valueOf(ReaderUtils.getElementText(elem));
         }
 
         public Object getInstance(String elem) {
@@ -1412,7 +1412,7 @@ public class ArgHelper {
                 throw new NullPointerException("The boolean passed in was null");
             }
 
-            return new Boolean(elem);
+            return Boolean.valueOf(elem);
         }
 
         /**
