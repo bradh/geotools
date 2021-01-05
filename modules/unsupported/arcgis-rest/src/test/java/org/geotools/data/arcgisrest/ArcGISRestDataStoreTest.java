@@ -35,7 +35,6 @@ import org.geotools.referencing.CRS;
 import org.geotools.util.UnsupportedImplementationException;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.locationtech.jts.geom.Geometry;
@@ -124,7 +123,6 @@ public class ArcGISRestDataStoreTest {
         }
     }
 
-    @Ignore
     @Test
     public void testVictoadsOpenData() throws Exception {
 
@@ -296,7 +294,6 @@ public class ArcGISRestDataStoreTest {
                         new NameImpl(ArcGISRestDataStoreFactoryTest.NAMESPACE, TYPENAME2)));
     }
 
-    @Ignore
     @Test
     public void testCreateFeatureSourceAndCountFeature() throws Exception {
 
@@ -362,7 +359,6 @@ public class ArcGISRestDataStoreTest {
         assertEquals(79, src.getCount(new Query()));
     }
 
-    @Ignore
     @Test
     public void testFeatures() throws Exception {
 
@@ -426,7 +422,6 @@ public class ArcGISRestDataStoreTest {
         assertEquals(false, iter.hasNext());
     }
 
-    @Ignore
     @Test
     public void testFeaturesWithDate() throws Exception {
 
